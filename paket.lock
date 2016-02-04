@@ -3,6 +3,7 @@ NUGET
   specs:
     FAKE (4.19.0)
     FSharp.Compiler.Service (1.4.2.3)
+    FSharp.Core (4.0.0.1)
     FSharp.Formatting (2.13.5)
       FSharp.Compiler.Service (>= 1.4.2 < 1.5.0)
       FSharpVSPowerTools.Core (>= 2.2.0 < 2.3.0)
@@ -10,3 +11,5 @@ NUGET
       FSharp.Compiler.Service (>= 1.4.2.0)
     FsReveal (1.2.0)
       FSharp.Formatting (>= 2.11.0)
+    Suave (1.1.1)
+      FSharp.Core (>= 3.1.2.5)

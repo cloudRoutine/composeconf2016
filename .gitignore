@@ -10,7 +10,9 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+output/
 Draft/
+/.fake/
 
 # Build results
 [Dd]ebug/

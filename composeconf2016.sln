@@ -3,27 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SlideDeck", "SlideDeck\SlideDeck.fsproj", "{FCF66AF3-15A1-4CED-AA2C-31DDD79299EA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{28D94B03-C5B6-4499-B342-1CE5D37DA88D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{28D94B03-C5B6-4499-B342-1CE5D37DA88D}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		.ionide = .ionide
+		build.cmd = build.cmd
 		build.fsx = build.fsx
+		build.sh = build.sh
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "slides", "slides", "{6F21B25B-989D-4896-9345-65BED057B456}"
+	ProjectSection(SolutionItems) = preProject
+		slides\custom.css = slides\custom.css
+		slides\index.md = slides\index.md
+		slides\sample.fsx = slides\sample.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{7D090CE1-C3FD-4A36-B333-513E5F2DAF8F}"
+	ProjectSection(SolutionItems) = preProject
+		slides\images\logo.png = slides\images\logo.png
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FCF66AF3-15A1-4CED-AA2C-31DDD79299EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCF66AF3-15A1-4CED-AA2C-31DDD79299EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCF66AF3-15A1-4CED-AA2C-31DDD79299EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCF66AF3-15A1-4CED-AA2C-31DDD79299EA}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D090CE1-C3FD-4A36-B333-513E5F2DAF8F} = {6F21B25B-989D-4896-9345-65BED057B456}
 	EndGlobalSection
 EndGlobal

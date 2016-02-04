@@ -2,9 +2,9 @@
 linuxPrefix = "mono"
 command = "packages/FAKE/tools/FAKE.exe"
 host = "localhost"
-port = 8888
+port = 8083
 script = "build.fsx"
-build = "Serve"
+build = "KeepRunning"
 startString = "listener started"
 parameters = []
-startingPage = ""
+startingPage = "index.html"
