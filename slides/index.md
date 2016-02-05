@@ -44,6 +44,13 @@
 ![Highlighting](images/syntax-highlighting.png)
 
 
+----
+
+### Intellisense Tooltips
+
+![Tooltips](http://i.imgur.com/OqWA08g.gif)
+
+
 ---
 ### Autocomplete
 
