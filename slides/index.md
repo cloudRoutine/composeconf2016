@@ -6,47 +6,131 @@
 
 ***
 
-### Ionide and the State of F# OSS
+## Ionide and the State of F# OSS
 
 ![Ionide](images/ionide-logo.png)
 
----
+-------
+## Jared Hester
 
-# Maintainer
+![cloudRoutine](images/cloudRoutine.png)  
+###[https://github.com/cloudRoutine](https://github.com/cloudRoutine)
+###[@cloudRoutine](https://twitter.com/cloudRoutine)
 
+
+-----
+
+### Maintainer
 |---|----|---|
 |![FSharp.Control.Reactive](images/fsharp.control.reactive-logo.png)|![Ionide](images/ionide-logo-small.png)|![VisualFSharpPowertools](images/vfpt-logo.png)
 
+### Contributor
+|---|---|
+|![Paket](images/paket-logo.png)|![VisualFSharpPowertools](images/fake-logo.png)|
+
+
+***
+
+# What is Ionide?
+
+-------
+|---|----|---|
+|![FSharp.Control.Reactive](images/fsharp.control.reactive-logo.png)|![Ionide](images/ionide-logo-small.png)|![VisualFSharpPowertools](images/vfpt-logo.png)
+
+---------
+
+Slides about Functionality
+
+
+----
+## Ionide Installer
+
 ---
-```
-let x = "trying some code"
-```
-> with a quote below
+### Autocomplete
+
+
+---
+### Syntax Highlighting
+
+---
+## Ionide Paket
+
+
+---
+
+## Ionide Webviewer
+
+
+---
+
+
 
 ***
 
-### Paket
+# Ionide Internals
 
-    [lang=paket]
-    source https://nuget.org/api/v2
+---
 
-    nuget Castle.Windsor-log4net >= 3.2
-    nuget NUnit
+## Wait where's the JS?
 
-    github forki/FsUnit FsUnit.fs
+***
+
+# OSS for F# Success
+
+----
+
+### This Presentation was brought to you by
+
+|---------------------|----------|--------|
+| FSharp.Formatting   | FsReveal | Suave  |
+
+----
+
+## Commandline Parsing
+
+
+----
+
+## String Parsing
+
+FParsec
+
+----
+
+## GUI
+
+FsXaml
+FSharp.Viewmodule
+
+
+-------
+
+## Testing
+
+FsCheck
+
+Unquote
+
 
 
 
 ***
 
-### The Reality of a Developer's Life
+## The F# OSS Community
 
-**When I show my boss that I've fixed a bug:**
 
-![When I show my boss that I've fixed a bug](http://www.topito.com/wp-content/uploads/2013/01/code-07.gif)
+***
+# The Future of Ionide & VFPT
 
-**When your regular expression returns what you expect:**
+###[Ionide Roadmap](https://github.com/ionide/ionide-fsharp/wiki/Ionide-Roadmap)
 
-![When your regular expression returns what you expect](http://www.topito.com/wp-content/uploads/2013/01/code-03.gif)
+---
 
-*from [The Reality of a Developer's Life - in GIFs, Of Course](http://server.dzone.com/articles/reality-developers-life-gifs)*
+## VisualFSharpPowertools
+## ->
+## FSharpPowertools
+
+
+***
+
+#### [Links to Projects mentioned in this presentation](https://github.com/cloudRoutine/composeconf2016)

@@ -1,4 +1,4 @@
-
+# [Presentation Slides](http://cloudroutine.github.io/composeconf2016)
 
 
 # F# OSS Projects
@@ -90,7 +90,7 @@
 
 [Sign Up for Functional Programming Slack team for the #fsharp and #fsharp-beginners channels](http://fpchat.com/)
 
-[Join the F# Software Foundation for access to the FSSF slack team](http://foundation.fsharp.org/join)
+[Join the F# Software Foundation for access to the FSSF Slack team](http://foundation.fsharp.org/join)
 
 my handle is also `cloudroutine` on both teams
 

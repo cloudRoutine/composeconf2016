@@ -13,6 +13,8 @@
 output/
 Draft/
 /.fake/
+temp/
+
 
 # Build results
 [Dd]ebug/
