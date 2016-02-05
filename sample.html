@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>FsReveal</title>
-    <meta name="description" content="Introduction to FsReveal">
-    <meta name="author" content="Karlkim Suwanmongkol">
+    <title>Presentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="unkown">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,7 +14,7 @@
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/Sky.css" id="theme">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
     <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
     <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
     <link type="text/css" rel="stylesheet" href="css/custom.css" />
@@ -46,78 +46,13 @@
 </head>
 <body>
     <div class="reveal">
-        <div class="tip" id="fs1">val a : int<br /><br />Full name: Sample.a</div>
-<div class="tip" id="fs2">val factorial : x:int -&gt; int<br /><br />Full name: Sample.factorial</div>
-<div class="tip" id="fs3">val x : int</div>
-<div class="tip" id="fs4">Multiple items<br />module List<br /><br />from Microsoft.FSharp.Collections<br /><br />--------------------<br />type List&lt;&#39;T&gt; =<br />&#160;&#160;| ( [] )<br />&#160;&#160;| ( :: ) of Head: &#39;T * Tail: &#39;T list<br />&#160;&#160;interface IEnumerable<br />&#160;&#160;interface IEnumerable&lt;&#39;T&gt;<br />&#160;&#160;member GetSlice : startIndex:int option * endIndex:int option -&gt; &#39;T list<br />&#160;&#160;member Head : &#39;T<br />&#160;&#160;member IsEmpty : bool<br />&#160;&#160;member Item : index:int -&gt; &#39;T with get<br />&#160;&#160;member Length : int<br />&#160;&#160;member Tail : &#39;T list<br />&#160;&#160;static member Cons : head:&#39;T * tail:&#39;T list -&gt; &#39;T list<br />&#160;&#160;static member Empty : &#39;T list<br /><br />Full name: Microsoft.FSharp.Collections.List&lt;_&gt;</div>
-<div class="tip" id="fs5">val reduce : reduction:(&#39;T -&gt; &#39;T -&gt; &#39;T) -&gt; list:&#39;T list -&gt; &#39;T<br /><br />Full name: Microsoft.FSharp.Collections.List.reduce</div>
-<div class="tip" id="fs6">val c : int<br /><br />Full name: Sample.c</div>
-<div class="tip" id="fs7">Multiple items<br />type MeasureAttribute =<br />&#160;&#160;inherit Attribute<br />&#160;&#160;new : unit -&gt; MeasureAttribute<br /><br />Full name: Microsoft.FSharp.Core.MeasureAttribute<br /><br />--------------------<br />new : unit -&gt; MeasureAttribute</div>
-<div class="tip" id="fs8">[&lt;Measure&gt;]<br />type sqft<br /><br />Full name: Sample.sqft</div>
-<div class="tip" id="fs9">[&lt;Measure&gt;]<br />type dollar<br /><br />Full name: Sample.dollar</div>
-<div class="tip" id="fs10">val sizes : int&lt;sqft&gt; []<br /><br />Full name: Sample.sizes</div>
-<div class="tip" id="fs11">val prices : int&lt;dollar&gt; []<br /><br />Full name: Sample.prices</div>
-
+        
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section >
-<h3>What is FsReveal?</h3>
-<ul>
-<li>Generates <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> presentation from <a href="http://daringfireball.net/projects/markdown/">markdown</a></li>
-<li>Utilizes <a href="https://github.com/tpetricek/FSharp.Formatting">FSharp.Formatting</a> for markdown parsing</li>
-</ul>
-</section>
 <section >
-<h3>Reveal.js</h3>
-<ul>
-<li>A framework for easily creating beautiful presentations using HTML.</li>
-</ul>
-<blockquote>
-<p><strong>Atwood's Law</strong>: any application that can be written in JavaScript, will eventually be written in JavaScript.</p>
-</blockquote>
-</section>
-<section >
-<h3>FSharp.Formatting</h3>
-<ul>
-<li>F# tools for generating documentation (Markdown processor and F# code formatter).</li>
-<li>It parses markdown and F# script file and generates HTML or PDF.</li>
-<li>Code syntax highlighting support.</li>
-<li>It also evaluates your F# code and produce tooltips.</li>
-</ul>
-</section>
-<section >
-<section >
-<h3>Syntax Highlighting</h3>
-<h4>F# (with tooltips)</h4>
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
-<span class="l">2: </span>
-<span class="l">3: </span>
-</pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="i">a</span> <span class="o">=</span> <span class="n">5</span>
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="f">factorial</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="i">x</span> <span class="o">=</span> [<span class="n">1..</span><span onmouseout="hideTip(event, 'fs3', 4)" onmouseover="showTip(event, 'fs3', 4)" class="i">x</span>] <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs4', 5)" onmouseover="showTip(event, 'fs4', 5)" class="t">List</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs5', 6)" onmouseover="showTip(event, 'fs5', 6)" class="f">reduce</span> <span class="o">(*)</span>
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs6', 7)" onmouseover="showTip(event, 'fs6', 7)" class="i">c</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs2', 8)" onmouseover="showTip(event, 'fs2', 8)" class="f">factorial</span> <span onmouseout="hideTip(event, 'fs1', 9)" onmouseover="showTip(event, 'fs1', 9)" class="i">a</span>
-</code></pre></td>
-</tr>
-</table>
-<p><code>c</code> is evaluated for you</p>
-<table class="pre"><tr><td><pre><code>120</code></pre></td></tr></table>
-</section>
-<section >
-<h4>More F#</h4>
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
-<span class="l">2: </span>
-<span class="l">3: </span>
-<span class="l">4: </span>
-</pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp">[&lt;<span onmouseout="hideTip(event, 'fs7', 10)" onmouseover="showTip(event, 'fs7', 10)" class="t">Measure</span>&gt;] <span class="k">type</span> <span onmouseout="hideTip(event, 'fs8', 11)" onmouseover="showTip(event, 'fs8', 11)" class="t">sqft</span>
-[&lt;<span onmouseout="hideTip(event, 'fs7', 12)" onmouseover="showTip(event, 'fs7', 12)" class="t">Measure</span>&gt;] <span class="k">type</span> <span onmouseout="hideTip(event, 'fs9', 13)" onmouseover="showTip(event, 'fs9', 13)" class="t">dollar</span>
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs10', 14)" onmouseover="showTip(event, 'fs10', 14)" class="i">sizes</span> <span class="o">=</span> [|<span class="n">1700</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs8', 15)" onmouseover="showTip(event, 'fs8', 15)" class="t">sqft</span><span class="o">&gt;</span>;<span class="n">2100</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs8', 16)" onmouseover="showTip(event, 'fs8', 16)" class="t">sqft</span><span class="o">&gt;</span>;<span class="n">1900</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs8', 17)" onmouseover="showTip(event, 'fs8', 17)" class="t">sqft</span><span class="o">&gt;</span>;<span class="n">1300</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs8', 18)" onmouseover="showTip(event, 'fs8', 18)" class="t">sqft</span>&gt;|]
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs11', 19)" onmouseover="showTip(event, 'fs11', 19)" class="i">prices</span> <span class="o">=</span> [|<span class="n">53000</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs9', 20)" onmouseover="showTip(event, 'fs9', 20)" class="t">dollar</span><span class="o">&gt;</span>;<span class="n">44000</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs9', 21)" onmouseover="showTip(event, 'fs9', 21)" class="t">dollar</span><span class="o">&gt;</span>;<span class="n">59000</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs9', 22)" onmouseover="showTip(event, 'fs9', 22)" class="t">dollar</span><span class="o">&gt;</span>;<span class="n">82000</span><span class="o">&lt;</span><span onmouseout="hideTip(event, 'fs9', 23)" onmouseover="showTip(event, 'fs9', 23)" class="t">dollar</span>&gt;|] 
-</code></pre></td>
-</tr>
-</table>
 <h4><code>prices.[0]/sizes.[0]</code></h4>
-<table class="pre"><tr><td><pre><code>31</code></pre></td></tr></table>
+<table class="pre"><tr><td><pre><code>No value has been returned</code></pre></td></tr></table>
 </section>
 <section >
 <h4>C#</h4>
@@ -212,9 +147,9 @@ main <span class="prep">=</span> <span class="k">do</span>
 <span class="l">3: </span>
 <span class="l">4: </span>
 </pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="sql"><span class="k">select</span> * 
-<span class="k">from</span> 
-  (<span class="k">select</span> <span class="n">1</span> <span class="k">as</span> Id <span class="k">union</span> <span class="k">all</span> <span class="k">select</span> <span class="n">2</span> <span class="k">union</span> <span class="k">all</span> <span class="k">select</span> <span class="n">3</span>) <span class="k">as</span> X 
+<td class="snippet"><pre class="fssnip highlighted"><code lang="sql"><span class="k">select</span> *
+<span class="k">from</span>
+  (<span class="k">select</span> <span class="n">1</span> <span class="k">as</span> Id <span class="k">union</span> <span class="k">all</span> <span class="k">select</span> <span class="n">2</span> <span class="k">union</span> <span class="k">all</span> <span class="k">select</span> <span class="n">3</span>) <span class="k">as</span> X
 <span class="k">where</span> Id <span class="k">in</span> (@Ids<span class="n">1</span>, @Ids<span class="n">2</span>, @Ids<span class="n">3</span>)
 </code></pre></td></tr></table>
 <p><em>sql from <a href="https://code.google.com/p/dapper-dot-net/">Dapper</a></em></p>
