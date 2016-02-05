@@ -101,7 +101,7 @@
 
 ----
 
-![Funscript](images/Funscript.png)
+![Funscript](images/funscript.png)
 
 ----
 ```
@@ -138,7 +138,7 @@ let editDistance (s: string) (t: string) =
 
 | FSharp.Formatting   |  Suave  |FsReveal|
 |:-------------------:|:-------:|:------:|
-| ![FSharp.Formatting](images/FSharp.Formatting-logo-mid.png)|![Suave](images/suave-wide.png)  |![FsReveal](images/FsReveal-logo.png)|
+| ![FSharp.Formatting](images/fsharp.formatting-logo-mid.png)|![Suave](images/suave-wide.png)  |![FsReveal](images/fsreveal-logo.png)|
 
 ----
 
