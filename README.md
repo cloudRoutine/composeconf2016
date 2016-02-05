@@ -95,9 +95,4 @@ my handle is also `cloudroutine` on both teams
 
 [F# Web Stack Google Group](https://groups.google.com/forum/#!forum/web-stack-fs)
 
-## Learning
 
-
-
-
-Contact Info -
