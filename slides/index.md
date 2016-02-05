@@ -80,6 +80,12 @@
 
 ---
 
+## Code Snippets
+
+![Snippets](http://i.imgur.com/jta19C6.gif)
+
+---
+
 ## Yeoman Generator
 
 ![Yeoman](http://i.imgur.com/ObskEMT.gif)
