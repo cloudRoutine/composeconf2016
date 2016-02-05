@@ -46,7 +46,16 @@
 </head>
 <body>
     <div class="reveal">
-        
+        <div class="tip" id="fs1">Multiple items<br />type ReflectedDefinitionAttribute =<br />&#160;&#160;inherit Attribute<br />&#160;&#160;new : unit -&gt; ReflectedDefinitionAttribute<br />&#160;&#160;new : includeValue:bool -&gt; ReflectedDefinitionAttribute<br />&#160;&#160;member IncludeValue : bool<br /><br />Full name: Microsoft.FSharp.Core.ReflectedDefinitionAttribute<br /><br />--------------------<br />new : unit -&gt; ReflectedDefinitionAttribute<br />new : includeValue:bool -&gt; ReflectedDefinitionAttribute</div>
+<div class="tip" id="fs2">namespace Microsoft.FSharp</div>
+<div class="tip" id="fs3">val min : e1:&#39;T -&gt; e2:&#39;T -&gt; &#39;T (requires comparison)<br /><br />Full name: Microsoft.FSharp.Core.Operators.min</div>
+<div class="tip" id="fs4">module Array<br /><br />from Microsoft.FSharp.Collections</div>
+<div class="tip" id="fs5">val init : count:int -&gt; initializer:(int -&gt; &#39;T) -&gt; &#39;T []<br /><br />Full name: Microsoft.FSharp.Collections.Array.init</div>
+<div class="tip" id="fs6">val id : x:&#39;T -&gt; &#39;T<br /><br />Full name: Microsoft.FSharp.Core.Operators.id</div>
+<div class="tip" id="fs7">val create : count:int -&gt; value:&#39;T -&gt; &#39;T []<br /><br />Full name: Microsoft.FSharp.Collections.Array.create</div>
+<div class="tip" id="fs8">val blit : source:&#39;T [] -&gt; sourceIndex:int -&gt; target:&#39;T [] -&gt; targetIndex:int -&gt; count:int -&gt; unit<br /><br />Full name: Microsoft.FSharp.Collections.Array.blit</div>
+<div class="tip" id="fs9">Multiple items<br />val string : value:&#39;T -&gt; string<br /><br />Full name: Microsoft.FSharp.Core.Operators.string<br /><br />--------------------<br />type string = System.String<br /><br />Full name: Microsoft.FSharp.Core.string</div>
+
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section >
@@ -86,37 +95,52 @@
 </section>
 <section >
 <section >
-<h1>What is Ionide?</h1>
-</section>
-<section >
+<h2>What is Ionide?</h2>
 <table>
+<thead>
+<tr class="header">
+<th align="center"><p>Atom</p></th>
+<th></th>
+<th align="center"><p>vscode</p></th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td><p><img src="images/fsharp.control.reactive-logo.png" alt="FSharp.Control.Reactive" /></p></td>
-<td><p><img src="images/ionide-logo-small.png" alt="Ionide" /></p></td>
-<td><p><img src="images/vfpt-logo.png" alt="VisualFSharpPowertools" /></p></td>
+<td align="center"><p><img src="images/atom-logo.png" alt="Atom" /></p></td>
+<td><p><img src="images/fsharp-logo.png" alt="FSharp" /></p></td>
+<td align="center"><p><img src="images/vscode-logo.png" alt="Vscode" /></p></td>
 </tr>
 </tbody>
 </table>
 
 </section>
 <section >
-<p>Slides about Functionality</p>
-</section>
-<section >
-<h2>Ionide Installer</h2>
+<h3>Syntax Highlighting</h3>
+<p><img src="images/syntax-highlighting.png" alt="Highlighting" /></p>
 </section>
 <section >
 <h3>Autocomplete</h3>
+<p><img src="http://i.imgur.com/wlesaW5.gif" alt="Autocomplete" /></p>
 </section>
 <section >
-<h3>Syntax Highlighting</h3>
+<h3>Glyph Completion</h3>
+<p><img src="http://i.imgur.com/rsq5ukR.gif" alt="Glyphs" /></p>
+</section>
+<section >
+<h3>Ionide FSI</h3>
+<p><img src="http://i.imgur.com/zCmpk1u.gif" alt="FSI" /></p>
 </section>
 <section >
 <h2>Ionide Paket</h2>
+<p><img src="http://i.imgur.com/Vp9GjuH.gif" alt="Paket" /></p>
 </section>
 <section >
-<h2>Ionide Webviewer</h2>
+<h2>Ionide FAKE</h2>
+<p><img src="http://i.imgur.com/qMXsHMV.gif" alt="FAKE" /></p>
+</section>
+<section >
+<h2>Yeoman Generator</h2>
+<p><img src="http://i.imgur.com/ObskEMT.gif" alt="Yeoman" /></p>
 </section>
 </section>
 <section >
@@ -124,7 +148,54 @@
 <h1>Ionide Internals</h1>
 </section>
 <section >
-<h2>Wait where's the JS?</h2>
+<p><img src="images/electron.png" alt="Electron" /></p>
+</section>
+<section >
+<p><img src="images/Funscript.png" alt="Funscript" /></p>
+</section>
+<section >
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
+<span class="l"> 2: </span>
+<span class="l"> 3: </span>
+<span class="l"> 4: </span>
+<span class="l"> 5: </span>
+<span class="l"> 6: </span>
+<span class="l"> 7: </span>
+<span class="l"> 8: </span>
+<span class="l"> 9: </span>
+<span class="l">10: </span>
+<span class="l">11: </span>
+<span class="l">12: </span>
+<span class="l">13: </span>
+<span class="l">14: </span>
+<span class="l">15: </span>
+<span class="l">16: </span>
+<span class="l">17: </span>
+<span class="l">18: </span>
+<span class="l">19: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp">[&lt;<span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="t">ReflectedDefinition</span>&gt;]
+<span class="k">module</span> <span class="i">Atom</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="i">FSharp</span><span class="o">.</span><span class="i">CompletionHelpers</span>
+
+<span class="c">/// Find the minimum of three three terms that support comparison</span>
+<span class="k">let</span> <span class="k">inline</span> <span class="i">min3</span>(<span class="i">a</span>, <span class="i">b</span>, <span class="i">c</span>) <span class="o">=</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="i">min</span> <span class="i">a</span> (<span onmouseout="hideTip(event, 'fs3', 4)" onmouseover="showTip(event, 'fs3', 4)" class="i">min</span> <span class="i">b</span> <span class="i">c</span>)
+
+<span class="k">let</span> <span class="k">inline</span> <span class="i">distanceCalc</span> (<span class="i">m</span>, <span class="i">u</span>) (<span class="i">n</span>, <span class="i">v</span>) <span class="o">=</span>
+    <span class="k">let</span> <span class="i">d1</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs4', 5)" onmouseover="showTip(event, 'fs4', 5)" class="i">Array</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs5', 6)" onmouseover="showTip(event, 'fs5', 6)" class="i">init</span> <span class="i">n</span> <span onmouseout="hideTip(event, 'fs6', 7)" onmouseover="showTip(event, 'fs6', 7)" class="i">id</span>
+    <span class="k">let</span> <span class="i">d0</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs4', 8)" onmouseover="showTip(event, 'fs4', 8)" class="i">Array</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs7', 9)" onmouseover="showTip(event, 'fs7', 9)" class="i">create</span> <span class="i">n</span> <span class="n">0</span>
+    <span class="k">for</span> <span class="i">i</span><span class="o">=</span><span class="n">1</span> <span class="k">to</span> <span class="i">m</span><span class="o">-</span><span class="n">1</span> <span class="k">do</span>
+        <span class="i">d0</span><span class="o">.</span>[<span class="n">0</span>] <span class="o">&lt;-</span> <span class="i">i</span>
+        <span class="k">let</span> <span class="i">ui</span> <span class="o">=</span> <span class="i">u</span> <span class="i">i</span>
+        <span class="k">for</span> <span class="i">j</span><span class="o">=</span><span class="n">1</span> <span class="k">to</span> <span class="i">n</span><span class="o">-</span><span class="n">1</span> <span class="k">do</span>
+            <span class="i">d0</span><span class="o">.</span>[<span class="i">j</span>] <span class="o">&lt;-</span> <span class="n">1</span> <span class="o">+</span> <span class="i">min3</span>(<span class="i">d1</span><span class="o">.</span>[<span class="i">j</span>], <span class="i">d0</span><span class="o">.</span>[<span class="i">j</span><span class="o">-</span><span class="n">1</span>], <span class="i">d1</span><span class="o">.</span>[<span class="i">j</span><span class="o">-</span><span class="n">1</span>] <span class="o">+</span> <span class="k">if</span> <span class="i">ui</span> <span class="o">=</span> <span class="i">v</span> <span class="i">j</span> <span class="k">then</span> <span class="o">-</span><span class="n">1</span> <span class="k">else</span> <span class="n">0</span>)
+        <span onmouseout="hideTip(event, 'fs4', 10)" onmouseover="showTip(event, 'fs4', 10)" class="i">Array</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs8', 11)" onmouseover="showTip(event, 'fs8', 11)" class="i">blit</span> <span class="i">d0</span> <span class="n">0</span> <span class="i">d1</span> <span class="n">0</span> <span class="i">n</span>
+    <span class="i">d0</span><span class="o">.</span>[<span class="i">n</span><span class="o">-</span><span class="n">1</span>]
+
+<span class="k">let</span> <span class="i">editDistance</span> (<span class="i">s</span><span class="o">:</span> <span onmouseout="hideTip(event, 'fs9', 12)" onmouseover="showTip(event, 'fs9', 12)" class="i">string</span>) (<span class="i">t</span><span class="o">:</span> <span onmouseout="hideTip(event, 'fs9', 13)" onmouseover="showTip(event, 'fs9', 13)" class="i">string</span>) <span class="o">=</span>
+    <span class="i">distanceCalc</span> (<span class="i">s</span><span class="o">.</span><span class="i">Length</span>, <span class="k">fun</span> <span class="i">i</span> <span class="k">-&gt;</span> <span class="i">s</span><span class="o">.</span>[<span class="i">i</span>]) (<span class="i">t</span><span class="o">.</span><span class="i">Length</span>, <span class="k">fun</span> <span class="i">i</span> <span class="k">-&gt;</span> <span class="i">t</span><span class="o">.</span>[<span class="i">i</span>])
+</code></pre></td>
+</tr>
+</table>
 </section>
 </section>
 <section >
@@ -134,41 +205,67 @@
 <section >
 <h3>This Presentation was brought to you by</h3>
 <table>
+<thead>
+<tr class="header">
+<th align="center"><p>FSharp.Formatting</p></th>
+<th align="center"><p>Suave</p></th>
+<th align="center"><p>FsReveal</p></th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td><p>FSharp.Formatting</p></td>
-<td><p>FsReveal</p></td>
-<td><p>Suave</p></td>
+<td align="center"><p><img src="images/FSharp.Formatting-logo-mid.png" alt="FSharp.Formatting" /></p></td>
+<td align="center"><p><img src="images/suave-wide.png" alt="Suave" /></p></td>
+<td align="center"><p><img src="images/FsReveal-logo.png" alt="FsReveal" /></p></td>
 </tr>
 </tbody>
 </table>
 
 </section>
 <section >
-<h2>Commandline Parsing</h2>
+<h2>VFPT OSS Dependencies</h2>
+<ul>
+<li>FSharp.Viewmodule</li>
+<li>FsXaml</li>
+<li>FsCheck</li>
+<li>FSharpLint</li>
+<li>Fantomas</li>
+<li>FsPickler</li>
+<li>FParsec</li>
+</ul>
+</section>
 </section>
 <section >
-<h2>String Parsing</h2>
-<p>FParsec</p>
-</section>
-<section >
-<h2>GUI</h2>
-<p>FsXaml
-FSharp.Viewmodule</p>
-</section>
-<section >
-<h2>Testing</h2>
-<p>FsCheck</p>
-<p>Unquote</p>
-</section>
-</section>
 <section >
 <h2>The F# OSS Community</h2>
 </section>
 <section >
+<h2>Explore Projects</h2>
+<h4>F# Community Incubation Space</h4>
+<h4><a href="http://fsprojects.github.io/">http://fsprojects.github.io/</a></h4>
+<p><img src="images/fsprojects-logo.png" alt="fsprojects" /></p>
+</section>
+<section >
+<h3>Meet the Devs</h3>
+<h4>FPChat - Functional Programming Slack Team #fsharp</h4>
+<p><img src="images/slack-logo.png" alt="Slack" /></p>
+<h4><a href="https://gitter.im/ionide/ionide-project">https://gitter.im/ionide/ionide-project</a></h4>
+<p><img src="images/gitter-logo.png" alt="Gitter" /></p>
+</section>
+</section>
+<section >
 <section >
 <h1>The Future of Ionide &amp; VFPT</h1>
-<h3><a href="https://github.com/ionide/ionide-fsharp/wiki/Ionide-Roadmap">Ionide Roadmap</a></h3>
+</section>
+<section >
+<h2><a href="https://github.com/ionide/ionide-fsharp/wiki/Ionide-Roadmap">Ionide Roadmap</a></h2>
+<ul>
+<li>FSharpLint Integration</li>
+<li>FsLab Integration</li>
+<li>Fix Integration</li>
+<li>More Code Snippets</li>
+<li>Path Completion</li>
+</ul>
 </section>
 <section >
 <h2>VisualFSharpPowertools</h2>
@@ -177,7 +274,7 @@ FSharp.Viewmodule</p>
 </section>
 </section>
 <section >
-<h4><a href="https://github.com/cloudRoutine/composeconf2016">Links to Projects mentioned in this presentation</a></h4>
+<h3><a href="https://github.com/cloudRoutine/composeconf2016">Links to Projects mentioned in this presentation</a></h3>
 </section>
 
 
