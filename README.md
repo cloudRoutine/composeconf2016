@@ -72,9 +72,6 @@
 * [Fix Docs](http://fsprojects.github.io/Fix/)  
   [Fix Repo](https://github.com/fsprojects/Fix)
 
-* [FsAutocomplete Repo](https://github.com/fsharp/FsAutoComplete)
-  []
-
 
 # Links
 
